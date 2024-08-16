@@ -1,12 +1,12 @@
-# AWS ETL Process: CSV to Parquet Transformation
+# AWS ETL Process: CSV to Json Transformation
 
 ## Introduction
-##### This project showcases a simple ETL process using AWS Glue to convert CSV data into a Parquet format. The transformation involves reading data from an S3 bucket, applying schema transformations using AWS Glue Catalog, and writing the transformed data back to S3.
+##### This project showcases a simple ETL process using AWS Glue to convert CSV data into a Json format. The transformation involves reading data from an S3 bucket, applying schema transformations using AWS Glue Catalog, and writing the transformed data back to S3.
 
 ## Prerequisites
 ##### AWS Account: Access to AWS services.
 ##### IAM Role: An AWS IAM role with permissions to use AWS Glue, S3, and related services.
-##### S3 Bucket: An S3 bucket to store the input CSV and output Parquet files.
+##### S3 Bucket: An S3 bucket to store the input CSV and output Json files.
 ##### AWS Glue Service: Permissions to create jobs and manage Glue Catalog.
 
 ## Project Architechture
@@ -14,7 +14,7 @@
 
 ## AWS Services Used
 ##### AWS Glue: For running ETL jobs.
-##### AWS S3: For storing the CSV and Parquet files.
+##### AWS S3: For storing the CSV and Json files.
 ##### AWS Glue Catalog: For schema management and transformations.
 
 ## Setup Instructions
@@ -52,7 +52,7 @@
 ##### ETL Job Process
 ##### Extract: The CSV file is extracted from the specified S3 bucket.
 ##### Transform: Schema transformations are applied using AWS Glue Catalog.
-##### Load: The transformed data is saved back to the S3 bucket in Parquet format.
+##### Load: The transformed data is saved back to the S3 bucket in Json format.
 
 <img width="277" alt="Screenshot_9" src="https://github.com/user-attachments/assets/e7443ce1-6986-4511-b704-0fd0624bba7c">
 
@@ -61,7 +61,7 @@
 ##### Monitor the job's progress in the console or CloudWatch.
 ##### Verify Output:
 
-##### After the job completes, check the S3 bucket for the Parquet file.
+##### After the job completes, check the S3 bucket for the Json file.
 <img width="485" alt="Screenshot_10" src="https://github.com/user-attachments/assets/a0348fde-f64d-48f0-bf5d-c21e641cac2d">
 
 
